@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-top: 0;
+}
+
+.input-area {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+#taskInput {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#addButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+#taskList li {
+  background-color: #e9ecef;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* NOVO: Estilo para tarefas concluídas */
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.completed .delete-button {
+  background-color: #0ebe2b;
+}
+
+/* NOVO: Estilo para o botão de edição */
+.edit-button {
+  background-color: #ffc107;
+  color: #333;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 0.5rem; /* Espaço entre o botão de excluir */
+}
